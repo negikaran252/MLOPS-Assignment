@@ -1,0 +1,2 @@
+set MLFLOW_TRACKING_URI=http://localhost:5000
+mlflow models serve --model-uri models:/Diabetes_Predictor/production -p 7777 --no-conda

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetes Prediction</title>
+    <style>
+        /* Add some basic CSS to style the form */
+        .form-container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: inline-block;
+            width: 150px;
+        }
+
+        .form-group input {
+            width: 250px;
+            padding: 5px;
+        }
+
+        .submit-button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Diabetes Prediction</h1>
+    <div class="form-container">
+        <form method="POST" action="/predict">
+            <div class="form-group">
+                <label for="Pregnancies">Pregnancies:</label>
+                <input type="text" name="Pregnancies"><br>
+            </div>
+
+            <div class="form-group">
+                <label for="PlasmaGlucose">Plasma Glucose:</label>
+                <input type="text" name="PlasmaGlucose"><br>
+            </div>
+        
+
+            <div class="form-group">
+                <label for="DiastolicBloodPressure">Diastolic Blood Pressure:</label>
+                <input type="text" name="DiastolicBloodPressure"><br>
+            </div>
+
+            <div class="form-group">
+                <label for="TricepsThickness">Triceps Thickness:</label>
+                <input type="text" name="TricepsThickness"><br>
+            </div>
+
+            <div class="form-group">
+                <label for="SerumInsulin">Serum Insulin:</label>
+                <input type="text" name="SerumInsulin"><br>
+            </div>
+
+            <div class="form-group">
+                <label for="BMI">BMI:</label>
+                <input type="text" name="BMI"><br>
+            </div>
+
+            <div class="form-group">
+                <label for="DiabetesPedigree">Diabetes Pedigree:</label>
+                <input type="text" name="DiabetesPedigree"><br>
+            </div>
+
+            <div class="form-group">
+                <label for="Age">Age:</label>
+                <input type="text" name="Age"><br>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
